@@ -12,4 +12,4 @@ RUN git config --global user.email "mirzaspc@gmail.com"
 
 COPY build.sh /home/runner/kernel/build.sh
 
-CMD ["bash", "build.sh"]
+CMD ["bash", "kernel/build.sh"]
