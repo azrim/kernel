@@ -5,6 +5,6 @@ RUN git clone https://github.com/silont-project/kernel_xiaomi_ginkgo -b new --de
 RUN git config --global user.name "azrim"
 RUN git config --global user.email "mirzaspc@gmail.com"
 
-COPY build.sh $HOME/kernel/build.sh
+COPY build.sh /home/runner/build.sh
 
-CMD ["bash", "$HOME/kernel/build.sh"]
+CMD ["bash", "build.sh"]
